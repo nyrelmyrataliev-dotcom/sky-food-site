@@ -1,413 +1,243 @@
 <!DOCTYPE html>
 
-<html class="dark" lang="ru"><head>
+<html class="light" lang="ru"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Sky Food | Кулинарная эстетика</title>
+<title>Заказать рекламу | Rate Card</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "surface-dim": "#131313",
-                        "error-container": "#93000a",
-                        "primary": "#f2ca50",
-                        "primary-fixed": "#ffe088",
-                        "surface-container-highest": "#353535",
-                        "surface-variant": "#353535",
-                        "background": "#131313",
-                        "on-tertiary": "#2f3131",
-                        "on-secondary-container": "#bab8b7",
-                        "on-error-container": "#ffdad6",
-                        "on-primary-fixed-variant": "#574500",
-                        "on-surface-variant": "#d0c5af",
-                        "secondary-container": "#4a4949",
-                        "surface-container-high": "#2a2a2a",
-                        "on-tertiary-fixed": "#1a1c1c",
-                        "on-secondary-fixed-variant": "#474646",
-                        "surface-tint": "#e9c349",
-                        "outline": "#99907c",
-                        "on-tertiary-container": "#434546",
-                        "on-primary-fixed": "#241a00",
-                        "surface-container-low": "#1b1c1c",
-                        "on-tertiary-fixed-variant": "#454747",
-                        "on-secondary-fixed": "#1c1b1b",
-                        "tertiary": "#cecece",
-                        "tertiary-container": "#b2b3b3",
-                        "on-primary": "#3c2f00",
-                        "inverse-surface": "#e4e2e1",
-                        "tertiary-fixed-dim": "#c6c6c7",
-                        "error": "#ffb4ab",
-                        "on-error": "#690005",
-                        "surface-container": "#1f2020",
-                        "on-background": "#e4e2e1",
-                        "inverse-on-surface": "#303030",
-                        "secondary": "#c8c6c5",
-                        "surface-bright": "#393939",
-                        "on-secondary": "#313030",
-                        "secondary-fixed": "#e5e2e1",
-                        "secondary-fixed-dim": "#c8c6c5",
-                        "primary-container": "#d4af37",
-                        "outline-variant": "#4d4635",
-                        "on-primary-container": "#554300",
-                        "primary-fixed-dim": "#e9c349",
-                        "inverse-primary": "#735c00",
-                        "on-surface": "#e4e2e1",
-                        "surface-container-lowest": "#0e0e0e",
-                        "tertiary-fixed": "#e2e2e2",
-                        "surface": "#131313"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "margin-desktop": "64px",
-                        "gutter": "24px",
-                        "unit": "8px",
-                        "margin-mobile": "20px",
-                        "section-gap": "80px",
-                        "container-max": "1280px"
-                    },
-                    "fontFamily": {
-                        "label-sm": ["Inter"],
-                        "body-md": ["Inter"],
-                        "headline-lg-mobile": ["Playfair Display"],
-                        "label-md": ["Inter"],
-                        "headline-lg": ["Playfair Display"],
-                        "headline-xl": ["Playfair Display"],
-                        "headline-md": ["Playfair Display"],
-                        "body-lg": ["Inter"]
-                    },
-                    "fontSize": {
-                        "label-sm": ["12px", {"lineHeight": "1", "fontWeight": "500"}],
-                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "headline-lg-mobile": ["28px", {"lineHeight": "1.3", "fontWeight": "600"}],
-                        "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                        "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
-                        "headline-xl": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}],
-                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
-                    }
-                },
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary": "#ffffff",
+                    "outline": "#6d7b6e",
+                    "on-error-container": "#93000a",
+                    "surface-variant": "#d9e3fb",
+                    "on-primary-container": "#004021",
+                    "surface-tint": "#006d3c",
+                    "on-error": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface": "#111c2d",
+                    "background": "#f9f9ff",
+                    "on-secondary-container": "#fefcff",
+                    "surface-container-high": "#dfe8ff",
+                    "surface-container-highest": "#d9e3fb",
+                    "on-primary-fixed-variant": "#00522c",
+                    "on-background": "#111c2d",
+                    "tertiary": "#aa3343",
+                    "primary": "#006d3c",
+                    "surface-dim": "#d0daf2",
+                    "on-primary-fixed": "#00210e",
+                    "secondary-fixed-dim": "#adc6ff",
+                    "primary-fixed-dim": "#51df8e",
+                    "inverse-primary": "#51df8e",
+                    "on-tertiary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "surface-container-low": "#f0f3ff",
+                    "secondary": "#0058bc",
+                    "tertiary-fixed-dim": "#ffb3b6",
+                    "secondary-container": "#0070eb",
+                    "surface": "#f9f9ff",
+                    "on-tertiary-container": "#72041f",
+                    "on-primary": "#ffffff",
+                    "inverse-on-surface": "#ecf0ff",
+                    "tertiary-fixed": "#ffdada",
+                    "outline-variant": "#bccabc",
+                    "on-secondary-fixed": "#001a41",
+                    "primary-container": "#12b76a",
+                    "on-tertiary-fixed-variant": "#891a2d",
+                    "on-secondary-fixed-variant": "#004493",
+                    "on-surface-variant": "#3d4a3f",
+                    "primary-fixed": "#70fda7",
+                    "on-tertiary-fixed": "#40000c",
+                    "surface-container": "#e8eeff",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed": "#d8e2ff",
+                    "surface-bright": "#f9f9ff",
+                    "tertiary-container": "#ff7380",
+                    "inverse-surface": "#273143"
             },
-        }
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "section-padding": "80px",
+                    "base": "8px",
+                    "margin-desktop": "32px",
+                    "gutter": "24px",
+                    "container-max": "1200px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "headline-sm": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "body-sm": ["Inter"],
+                    "display-lg-mobile": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                    "display-lg": ["48px", {"lineHeight": "60px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-md": ["12px", {"lineHeight": "18px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-md": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
     </script>
 <style>
-        .glass-panel {
-            background: rgba(42, 42, 42, 0.6);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        .text-glow {
-            text-shadow: 0 0 15px rgba(242, 202, 80, 0.3);
-        }
-        .custom-scrollbar::-webkit-scrollbar {
-            width: 4px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-track {
-            background: rgba(255, 255, 255, 0.05);
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb {
-            background: #f2ca50;
-            border-radius: 10px;
-        }
-        .nav-blur {
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-        }
-        .card-hover-effect {
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .card-hover-effect:hover {
-            transform: translateY(-8px) scale(1.05);
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 20px rgba(242, 202, 80, 0.1);
-            border-color: rgba(242, 202, 80, 0.3);
-        }
+        body { font-family: 'Inter', sans-serif; background-color: #f9f9ff; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .custom-shadow { box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03); }
+        .tier-card.active { border-color: #006d3c; background-color: #f0fdf4; }
+        .transition-all { transition: all 0.3s ease; }
     </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
 </head>
-<body class="bg-surface-dim text-on-surface font-body-md overflow-x-hidden custom-scrollbar">
-<!-- Header / Navigation -->
-<header class="fixed top-0 w-full z-50 nav-blur border-b border-white/10 shadow-sm transition-all duration-300 h-20 bg-surface/60">
-<div class="flex justify-between items-center h-full px-margin-desktop max-w-container-max mx-auto">
-<div class="flex items-center gap-8">
-<a class="text-headline-md font-headline-md font-bold tracking-tight text-primary" href="#">Sky Food</a>
-<nav class="hidden md:flex gap-8 items-center">
-<a class="text-primary border-b-2 border-primary pb-1 font-label-md text-label-md" href="#menu">Меню</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">Кухня</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">Наборы</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">Консьерж</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-label-md text-label-md" href="#">О нас</a>
-</nav>
+<body class="text-on-surface">
+<!-- Top App Bar -->
+<main class="max-w-[800px] mx-auto px-margin-mobile pt-10 pb-32">
+<!-- Header Section -->
+<section class="mb-section-padding text-center">
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-4">Заказать рекламу</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md mx-auto">Просто выберите тариф и опишите ваш продукт</p>
+</section>
+<!-- Step 1: Price Selection -->
+<section class="mb-12">
+<div class="flex items-center gap-2 mb-6">
+<span class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-label-md">1</span>
+<h3 class="font-headline-sm text-headline-sm">Выберите тариф</h3>
 </div>
-<div class="flex items-center gap-6">
-<div class="hidden lg:flex items-center gap-4">
-<button class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md">Войти</button>
-<button class="bg-primary text-on-primary px-6 py-2 rounded-xl font-label-md text-label-md hover:scale-[1.02] active:scale-95 transition-transform">Заказать</button>
-</div>
-<div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">shopping_bag</span>
-<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">account_circle</span>
-</div>
-</div>
-</div>
-</header>
-<!-- Side Shopping Basket -->
-<aside class="fixed right-0 top-20 h-[calc(100vh-80px)] w-80 bg-surface-container-high/80 backdrop-blur-xl border-l border-white/10 shadow-2xl z-40 hidden lg:flex flex-col py-gutter space-y-2">
-<div class="px-6 mb-4 flex items-center justify-between">
-<div>
-<h3 class="text-headline-md font-headline-md font-bold text-primary">Моя Корзина</h3>
-<p class="text-label-sm font-label-sm text-on-surface-variant">Премиальный выбор</p>
-</div>
-<img alt="Sky Food Logo" class="w-12 h-12 object-contain rounded-full bg-white p-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAr29tr7sA-Wt88mOb2FwnmVxb0uWawRdSXPUQAeLX9rND3xL5im86uCz-QSsfoYwQ0CQ7rLIMKYIwZcku95BCkYFCOiVG9PkLTyl0QDA_Z9Nfjb4dynUZ65n3BQIbhm3kozEer73fCsscW5qPcxps5zkO0eeA0tBW9S1gYhP1nE0_FG8MdvQ1a0oIO786YFo50rhbRnyoHBbbfkirQUIA5LG77JCxjfI4NyhMzfjS9vnUvTZgp01tKm_HgFWhG875U161sNPwxQVE"/>
-</div>
-<div class="flex-grow overflow-y-auto px-4 custom-scrollbar" id="basket-items">
-<!-- Dynamic Items -->
-<div class="flex flex-col items-center justify-center h-full opacity-40">
-<span class="material-symbols-outlined text-6xl mb-4">shopping_cart</span>
-<p class="text-body-md font-body-md">Ваша корзина пуста</p>
-</div>
-</div>
-<div class="p-6 border-t border-white/10 mt-auto">
-<div class="flex justify-between items-center mb-6">
-<span class="text-on-surface-variant font-label-md text-label-md">Итого</span>
-<span class="text-primary font-bold text-headline-md">0 сом</span>
-</div>
-<button class="w-full bg-primary text-on-primary font-label-md text-label-md py-4 rounded-xl shadow-lg hover:scale-[1.02] active:scale-95 transition-all flex items-center justify-center gap-2">
-<span class="material-symbols-outlined">payments</span>
-                Оформить заказ
-            </button>
-<button class="w-full mt-4 bg-[#25D366] text-white font-label-md text-label-md py-4 rounded-xl hover:scale-[1.02] active:scale-95 transition-all flex items-center justify-center gap-2">
-<span class="material-symbols-outlined">chat</span>
-                Заказать через WhatsApp
-            </button>
-</div>
-<div class="flex justify-center gap-6 pb-4">
-<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary" href="#">Помощь</a>
-<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary" href="#">Приватность</a>
-</div>
-</aside>
-<main class="lg:pr-80 pt-20">
-<!-- Hero Section -->
-<section class="relative h-[90vh] min-h-[600px] flex items-center overflow-hidden">
-<div class="absolute inset-0 z-0">
-<div class="w-full h-full bg-cover bg-center scale-105 animate-pulse-slow" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBQoxIUoPjBcnr4d1-DLUVqm5-KIQoflC56q8aAvPqoRYPRmx2rDiFMia1vH-r5wf7kzOL687yGkd9MqTamIs1I-bYdyp-7AXMgfxKuLj0wXMDJNFVZEBZ7shmRM3LwWBf7ymH2sVM6YT794QSHJS_icaPKx_93Uk72ymsunGWZr7yawiXjRWcgvS6aGDb2fbp1c1kyckUwWdw2S4GV1k4nVbsD2JT_vr2W__779Ba6lRm44ieRGMKYVPv3-P-shEowZ-xdwv04n60')"></div>
-<div class="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent"></div>
-</div>
-<div class="relative z-10 px-margin-desktop max-w-container-max mx-auto w-full">
-<div class="max-w-2xl space-y-8">
-<img alt="Sky Food Logo" class="w-24 h-24 lg:w-32 lg:h-32 mb-8 bg-white/10 p-2 rounded-full backdrop-blur-md border border-white/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAr29tr7sA-Wt88mOb2FwnmVxb0uWawRdSXPUQAeLX9rND3xL5im86uCz-QSsfoYwQ0CQ7rLIMKYIwZcku95BCkYFCOiVG9PkLTyl0QDA_Z9Nfjb4dynUZ65n3BQIbhm3kozEer73fCsscW5qPcxps5zkO0eeA0tBW9S1gYhP1nE0_FG8MdvQ1a0oIO786YFo50rhbRnyoHBbbfkirQUIA5LG77JCxjfI4NyhMzfjS9vnUvTZgp01tKm_HgFWhG875U161sNPwxQVE"/>
-<h1 class="text-headline-xl font-headline-xl text-on-surface leading-tight">
-                        Кулинарное мастерство, <span class="text-primary italic">доставленное</span> вам
-</h1>
-<p class="text-body-lg font-body-lg text-on-surface-variant max-w-lg">
-                        Испытайте высокое искусство кулинарии в комфорте вашего дома. Мы переосмыслили доставку еды как премиальный сервис.
-                    </p>
-<div class="flex gap-6">
-<button class="bg-primary text-on-primary px-10 py-4 rounded-xl font-label-md text-label-md shadow-2xl hover:shadow-primary/40 hover:scale-[1.05] active:scale-95 transition-all">
-                            Исследовать Меню
-                        </button>
-<button class="glass-panel text-on-surface px-10 py-4 rounded-xl font-label-md text-label-md hover:bg-white/10 hover:border-primary/30 transition-all">
-                            Наш Консьерж
-                        </button>
-</div>
-</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Tier 1 -->
+<button class="tier-card transition-all text-left bg-white border border-outline-variant rounded-xl p-6 custom-shadow hover:border-primary" onclick="selectTier('Базовый', '150 сом', this)">
+<span class="material-symbols-outlined text-primary mb-4" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<div class="font-label-md text-outline uppercase tracking-wider mb-1">Базовый</div>
+<div class="font-headline-md text-headline-md text-on-surface mb-2">150 сом</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Разовая публикация в ленте новостей.</p>
+</button>
+<!-- Tier 2 -->
+<button class="tier-card transition-all text-left bg-white border border-outline-variant rounded-xl p-6 custom-shadow hover:border-primary" onclick="selectTier('Стандарт', '500 сом', this)">
+<span class="material-symbols-outlined text-primary mb-4" style="font-variation-settings: 'FILL' 1;">stars</span>
+<div class="font-label-md text-outline uppercase tracking-wider mb-1">Стандарт</div>
+<div class="font-headline-md text-headline-md text-on-surface mb-2">500 сом</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Публикация + закрепление на 24 часа.</p>
+</button>
+<!-- Tier 3 -->
+<button class="tier-card transition-all text-left bg-white border border-outline-variant rounded-xl p-6 custom-shadow hover:border-primary" onclick="selectTier('Премиум', '1000 сом', this)">
+<span class="material-symbols-outlined text-primary mb-4" style="font-variation-settings: 'FILL' 1;">diamond</span>
+<div class="font-label-md text-outline uppercase tracking-wider mb-1">Премиум</div>
+<div class="font-headline-md text-headline-md text-on-surface mb-2">1000 сом</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Полный охват аудитории + рассылка.</p>
+</button>
 </div>
 </section>
-<!-- Menu Section -->
-<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto" id="menu">
-<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
-<div>
-<h2 class="text-headline-xl font-headline-xl text-primary mb-2">Наше Меню</h2>
-<div class="h-1 w-24 bg-primary"></div>
+<!-- Step 2: Description -->
+<section class="opacity-30 pointer-events-none transition-all duration-500" id="step-2">
+<div class="flex items-center gap-2 mb-6">
+<span class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-label-md">2</span>
+<h3 class="font-headline-sm text-headline-sm">Опишите продукт</h3>
 </div>
-<div class="flex flex-wrap gap-4">
-<button class="px-6 py-2 rounded-full glass-panel text-primary border-primary/50 text-label-md font-label-md hover:bg-primary/10 transition-colors">Пицца</button>
-<button class="px-6 py-2 rounded-full glass-panel text-on-surface-variant text-label-md font-label-md hover:text-primary hover:border-primary/30 transition-colors">Бургеры</button>
-<button class="px-6 py-2 rounded-full glass-panel text-on-surface-variant text-label-md font-label-md hover:text-primary hover:border-primary/30 transition-colors">Соусы</button>
-<button class="px-6 py-2 rounded-full glass-panel text-on-surface-variant text-label-md font-label-md hover:text-primary hover:border-primary/30 transition-colors">Напитки</button>
-</div>
-</div>
-<!-- Bento Grid Layout for Categories -->
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-gutter">
-<!-- PIZZA -->
-<div class="group relative bg-surface-container rounded-3xl overflow-hidden shadow-xl border border-white/5 card-hover-effect">
-<div class="relative h-64 overflow-hidden">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8yghawd1q3esRHZNyPfV9B4ZWGjBp6HB4-XD1Y0tMwJQoB9jnxBufWOGqyT0dFIwaNzTCBs8RLHkIDu1W8OMdUsItpBUMKAEaLxIHO1J_YpIUhhVGfgQ89tg4uj5mvh1fAUy_hiCrEmjYjbcLxLa6Qt73VD_XH2kIYEL5CDRSFJ7s3gzS6U1nfITe9TC6G-sGQ18LxJpsN2Q6CSJh9y39P_6f3lwaDDPuTKsx-Nol8I9akjDp1FlpNHnxNVbLQ5vGQZCybGaV6Yw"/>
-<div class="absolute top-4 right-4 bg-primary text-on-primary px-4 py-1 rounded-full text-label-md font-bold shadow-lg">250 сом</div>
-</div>
-<div class="p-6 space-y-4">
-<div class="flex justify-between items-start">
-<h3 class="text-headline-md font-headline-md text-on-surface">Маргарита</h3>
-<span class="bg-primary/10 text-primary px-2 py-1 rounded text-[10px] uppercase tracking-widest font-bold">Классика</span>
-</div>
-<p class="text-on-surface-variant text-label-md">Томаты Сан-Марцано, моцарелла буффало, свежий базилик, оливковое масло.</p>
-<button class="w-full glass-panel py-3 rounded-xl text-primary font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-primary hover:text-on-primary hover:scale-[1.02] active:scale-95 transition-all duration-300">
-<span class="material-symbols-outlined">add_shopping_cart</span>
-                            В корзину
-                        </button>
-</div>
-</div>
-<div class="group relative bg-surface-container rounded-3xl overflow-hidden shadow-xl border border-white/5 card-hover-effect">
-<div class="relative h-64 overflow-hidden">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQUGIXawFHM5_O1tD-jeDtVN5kUVbdNCyY68k_vgEqMo6gr5B6Qs6spyLtfmsvASsUuCnZh320ywZOZ-LFw6Hj5nJyym7eSvbe5WiZi3TiV39tOTjhOeDyOavRSisFlZfoDVF-HgexK-n3BbHtzIIxaTkGd66xFttAGT42f5WzgAjsCm2UX3WNJmiV2LT6ZE7DWaEhAg67mQvO4VH-3U3JT8bNACU-ftnLz1S_5IIBOzbYzrsGhbbD9y2e6ZrqJINYvg8XoLUdx2Q"/>
-<div class="absolute top-4 right-4 bg-primary text-on-primary px-4 py-1 rounded-full text-label-md font-bold shadow-lg">450 сом</div>
-</div>
-<div class="p-6 space-y-4">
-<h3 class="text-headline-md font-headline-md text-on-surface">Пепперони</h3>
-<p class="text-on-surface-variant text-label-md">Острая салями пепперони, двойная порция моцареллы, фирменный томатный соус.</p>
-<button class="w-full glass-panel py-3 rounded-xl text-primary font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-primary hover:text-on-primary hover:scale-[1.02] active:scale-95 transition-all duration-300">
-<span class="material-symbols-outlined">add_shopping_cart</span>
-                            В корзину
-                        </button>
-</div>
-</div>
-<!-- BURGERS -->
-<div class="group relative bg-surface-container rounded-3xl overflow-hidden shadow-xl border border-white/5 card-hover-effect">
-<div class="relative h-64 overflow-hidden">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5utMqU5rHl-tj4ZHyTIHHLq3IB3n-9HTRWmGBmJmcCh2yC_zkpkVoBR0eV-GVkYPgTgy7XA0Mv5f5QDN9IU7p7UaYDi_M-6qJahdYI-kXlEKZgNNrfsq_0g1_v6kxp0n6tZ69tZqhUorcc648KyTII7xCfCJahLHzMAVAoIsUGv6FGe7BzJ1Ofn8_EDuBf4rq7fASFbSwSxd6xEz818BbqYpee-SU6LNm78iW1Nz-1CmgXuJOwLyuOlR5shk4wlTKtMxlgJUi92g"/>
-<div class="absolute top-4 right-4 bg-primary text-on-primary px-4 py-1 rounded-full text-label-md font-bold shadow-lg">200 сом</div>
-</div>
-<div class="p-6 space-y-4">
-<h3 class="text-headline-md font-headline-md text-on-surface">Классик</h3>
-<p class="text-on-surface-variant text-label-md">Говяжья котлета Black Angus, хрустящий салат, авторский соус, булочка бриошь.</p>
-<button class="w-full glass-panel py-3 rounded-xl text-primary font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-primary hover:text-on-primary hover:scale-[1.02] active:scale-95 transition-all duration-300">
-<span class="material-symbols-outlined">add_shopping_cart</span>
-                            В корзину
-                        </button>
-</div>
-</div>
-<div class="group relative bg-surface-container rounded-3xl overflow-hidden shadow-xl border border-white/5 card-hover-effect">
-<div class="relative h-64 overflow-hidden">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0vdkKoa8djHw8b8bqvcezu4Mh5_TXiD25GtMwvHir6KGzbl-opO4JMG_lYLa9FMFfDpKHfNTrpJHKZL_u6KbpljMfyZwtIfCDW0rp_zYzXsEKBvSddBQT2SYYyezBQ-UA0FIwdULOi2Zzdxwnv8wiJtnUeW77IvoTBiY3ZgDxucdI92HwGFsfjLRFc4AcrnJ0P7BLITgWGIMYKVWBV5aNC-XG5lbmAyyDEZ-lbd0SbxELpyiw-VH8Vr29EnLkWersUd821Taqelk"/>
-<div class="absolute top-4 right-4 bg-primary text-on-primary px-4 py-1 rounded-full text-label-md font-bold shadow-lg">350 сом</div>
-</div>
-<div class="p-6 space-y-4">
-<h3 class="text-headline-md font-headline-md text-on-surface">Чизбургер</h3>
-<p class="text-on-surface-variant text-label-md">Тройная порция сыра Чеддер, сочная котлета, маринованный огурчик, красный лук.</p>
-<button class="w-full glass-panel py-3 rounded-xl text-primary font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-primary hover:text-on-primary hover:scale-[1.02] active:scale-95 transition-all duration-300">
-<span class="material-symbols-outlined">add_shopping_cart</span>
-                            В корзину
-                        </button>
-</div>
-</div>
-<!-- SAUCES -->
-<div class="group relative bg-surface-container rounded-3xl overflow-hidden shadow-xl border border-white/5 card-hover-effect">
-<div class="p-6 flex items-center gap-4">
-<div class="w-20 h-20 rounded-2xl overflow-hidden flex-shrink-0">
-<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvVGei7eXKDYN9HixSdZeAvyqYFQM76rGN-mHltxLqyBzeuBgZo844Mxr_zBV5NAsDR0P1bZfkLargVmUQmFGBarv7fmm-n8XScSVpKsdwIdVen5bnH-VDeeGT__02rt9z4d_uBH-ekIoKvLFCczWqCqCcOhCnQGUMn_wLFf2Gq3rUysXS9PJX83rKyPN-e8yG53xA-cqWFIy02JF_vGNQwvvC9WLAHPd9zl-p6SVdtFWjYVm-4Qo_entDXEM1lmH35rN1FQ3Sf84"/>
-</div>
-<div class="flex-grow">
-<h4 class="text-label-md font-bold text-on-surface">Чесночный соус</h4>
-<p class="text-primary font-bold">50 сом</p>
-</div>
-<button class="bg-primary/20 text-primary p-2 rounded-xl hover:bg-primary hover:text-on-primary hover:scale-110 transition-all">
-<span class="material-symbols-outlined text-sm">add</span>
-</button>
-</div>
-</div>
-<div class="group relative bg-surface-container rounded-3xl overflow-hidden shadow-xl border border-white/5 card-hover-effect">
-<div class="p-6 flex items-center gap-4">
-<div class="w-20 h-20 rounded-2xl overflow-hidden flex-shrink-0">
-<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1cFGC56H5c2LciHBFA7kf0OY-4C_935tC-SdFxnoRGUC902qE-yocZcwu0WYTVx59J2WhnF92MVUv4ih8KrvrzhMFpsEUAlGx5RJxwYVcqlkZj_xWUXFaVXe3ylrtgbfj8vfTDWzPaKYT7n20G6OGBthwMtqujTD-z6X9U_eRgSBlv9zhToR6xEuVhVjUGGfSN0C9KbeyLJiMW7lADMYjXpawviK0-3_D5nS3OIXLB2KcLlztCwhuI_5JfUcRHY2TMjXDioN2khw"/>
-</div>
-<div class="flex-grow">
-<h4 class="text-label-md font-bold text-on-surface">BBQ соус</h4>
-<p class="text-primary font-bold">50 сом</p>
-</div>
-<button class="bg-primary/20 text-primary p-2 rounded-xl hover:bg-primary hover:text-on-primary hover:scale-110 transition-all">
-<span class="material-symbols-outlined text-sm">add</span>
-</button>
-</div>
-</div>
-<!-- DRINKS -->
-<div class="group relative bg-surface-container rounded-3xl overflow-hidden shadow-xl border border-white/5 card-hover-effect">
-<div class="p-6 flex items-center gap-4">
-<div class="w-20 h-20 rounded-2xl overflow-hidden flex-shrink-0">
-<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQZhtPqxN5SrsHbioSsBbBjJYgDlIAeZhPac6M5n0PonhYV6gX-ozm4wmdtM-yxR8uW3UOydNZdiuXiFEjzrYFvkG9jGJhqtrJ_dYS6yX-cZ1lvZSrr52Y0nddjHXX1DYXnrt9TZ8zlp2qTnDFIIIp7bio0MpgGgrZ8_1AL5Hosqn7aTEpzuIKQr9T5uLTBmemtu6p9G4pjLNGwdsfBn3RKuu9pCK_yBo020Pq9SeFyIAuSgyfhrLa3TsloRwCpsOa4A4qInazTwM"/>
-</div>
-<div class="flex-grow">
-<h4 class="text-label-md font-bold text-on-surface">Кола Классик</h4>
-<p class="text-primary font-bold">100 сом</p>
-</div>
-<button class="bg-primary/20 text-primary p-2 rounded-xl hover:bg-primary hover:text-on-primary hover:scale-110 transition-all">
-<span class="material-symbols-outlined text-sm">add</span>
-</button>
-</div>
-</div>
-<div class="group relative bg-surface-container rounded-3xl overflow-hidden shadow-xl border border-white/5 card-hover-effect">
-<div class="p-6 flex items-center gap-4">
-<div class="w-20 h-20 rounded-2xl overflow-hidden flex-shrink-0">
-<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmv5f3ArYZzqk-mTMem19DtHyl6LDFifQmvP8ObNr2VLEmJuZ5e0L_qv7EC4choofKCZUXhJSu1wloJiHdFwn83GQlk9XsJtSKvEo56wf-FbAQjr0VvuJsq16dRbzfkIN1CdLLhXGo0EtWxi-aoZA6_bgrT9aYwRJByBmknP7YUZxImKfSzZH1iStyXAtZzexrDAkcWzTNJ0aLv98wATTMRJ61N3ylqVGehPGVZEeud8URCNn2xM21ZlY7BGGVrsa3dNR0nRwPhxU"/>
-</div>
-<div class="flex-grow">
-<h4 class="text-label-md font-bold text-on-surface">Вода (б/г)</h4>
-<p class="text-primary font-bold">60 сом</p>
-</div>
-<button class="bg-primary/20 text-primary p-2 rounded-xl hover:bg-primary hover:text-on-primary hover:scale-110 transition-all">
-<span class="material-symbols-outlined text-sm">add</span>
-</button>
-</div>
-</div>
+<div class="bg-white border border-outline-variant rounded-xl p-6 custom-shadow">
+<label class="block font-label-md text-on-surface-variant mb-2" for="description">Что именно рекламировать?</label>
+<textarea class="w-full bg-surface-container-low border border-outline-variant rounded-lg p-4 focus:ring-2 focus:ring-primary focus:border-transparent outline-none font-body-md transition-all" id="description" placeholder="Напишите краткое описание вашего товара, услуги или канала..." rows="4"></textarea>
 </div>
 </section>
-<!-- Premium Footer -->
-<footer class="w-full relative bottom-0 bg-surface-container-lowest border-t border-white/5 mt-section-gap">
-<div class="flex flex-col md:flex-row justify-between items-center py-section-gap px-margin-desktop max-w-container-max mx-auto">
-<div class="mb-8 md:mb-0">
-<h2 class="text-headline-lg font-headline-lg text-primary uppercase tracking-widest">Sky Food</h2>
-<p class="text-label-sm font-label-sm text-on-surface-variant mt-2">© 2024 Sky Food. Переосмысленная кулинарная логистика.</p>
+<!-- Image Decorative Section -->
+<section class="mt-12 rounded-xl overflow-hidden custom-shadow h-64 relative">
+<div class="bg-cover bg-center w-full h-full" data-alt="A professional, minimalist editorial photograph of a high-end office workspace with a clean white desk, a modern silver laptop, and a single green succulent plant. The lighting is soft, natural daylight coming from a large window, creating a serene and productive atmosphere. The color palette is dominated by whites, light grays, and natural green accents, embodying a premium and functional aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC9Eart-updHeob7XtnwCOePmMjkfFYVTdOS24RXNcaQYXMhNC5sT4rI6nS2HlIiotbQsV2mxU3dm-0DQJDmfcPgrlHK0eBSecZDMR6JzeBbHKOAkl_y8IZsqrlKmQo0KObQdFcuUhIM0_8uU6YQfGNMs5qLXYe0q-uWIrfDL2cCCe85emEb1t-t0hG0QjEHgUYnCyuCPKZbna8WzN_xpkmta5h1WSFeshJkPpL_vRXi7-9pI7p5l6cyAdVr7YOWe-BN5KYx2lDE4iH')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/40 to-transparent"></div>
+<div class="absolute bottom-6 left-6 text-white">
+<p class="font-label-md uppercase tracking-widest opacity-80">Ваш успех начинается здесь</p>
+<p class="font-headline-sm">Эффективное продвижение</p>
 </div>
-<div class="flex flex-wrap justify-center gap-8">
-<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-label-sm text-label-sm" href="#">Условия сервиса</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-label-sm text-label-sm" href="#">Политика конфиденциальности</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-label-sm text-label-sm" href="#">Устойчивое развитие</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-label-sm text-label-sm" href="#">Карьера</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-label-sm text-label-sm" href="#">Пресса</a>
-</div>
-<div class="mt-8 md:mt-0 flex gap-4">
-<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer">public</span>
-<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer">share</span>
-</div>
-</div>
-</footer>
+</section>
 </main>
-<!-- FAB for Mobile -->
-<button class="lg:hidden fixed bottom-6 right-6 w-16 h-16 rounded-full bg-primary text-on-primary shadow-2xl flex items-center justify-center z-50 hover:scale-110 transition-transform active:scale-95">
-<span class="material-symbols-outlined">shopping_cart</span>
+<!-- Bottom Action Bar -->
+<div class="fixed bottom-0 left-0 w-full bg-surface border-t border-outline-variant px-margin-mobile py-4 z-50">
+<div class="max-w-[800px] mx-auto flex items-center justify-between">
+<div class="hidden md:block">
+<p class="font-body-sm text-on-surface-variant" id="summary-text">Выберите тариф, чтобы продолжить</p>
+</div>
+<button class="w-full md:w-auto bg-primary text-white px-10 py-4 rounded-full font-label-md uppercase tracking-widest flex items-center justify-center gap-2 opacity-50 cursor-not-allowed active:scale-95 transition-all" disabled="" id="submit-btn" onclick="sendToWhatsApp()">
+                Отправить
+                <span class="material-symbols-outlined text-[18px]">send</span>
 </button>
+</div>
+</div>
+<!-- WhatsApp FAB (Hidden until tier selected) -->
+<div class="fixed bottom-24 right-6 scale-0 transition-all duration-300" id="whatsapp-fab">
+<button class="w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center custom-shadow hover:scale-110 active:scale-90 transition-transform" onclick="sendToWhatsApp()">
+<svg class="w-7 h-7 fill-current" viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+</button>
+</div>
 <script>
-        // Simple Micro-interactions
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 50) {
-                header.classList.add('bg-surface/90', 'shadow-lg');
-            } else {
-                header.classList.remove('bg-surface/90', 'shadow-lg');
-            }
-        });
+        let selectedTierName = "";
+        let selectedPrice = "";
 
-        // Add to basket visual feedback
-        const buttons = document.querySelectorAll('button');
-        buttons.forEach(btn => {
-            btn.addEventListener('click', function(e) {
-                if (this.innerText.includes('В корзину') || this.innerText.includes('Add to Basket')) {
-                    const originalText = this.innerHTML;
-                    this.innerHTML = '<span class="material-symbols-outlined animate-bounce">check</span> Добавлено';
-                    this.classList.add('bg-primary', 'text-on-primary');
-                    setTimeout(() => {
-                        this.innerHTML = originalText;
-                        this.classList.remove('bg-primary', 'text-on-primary');
-                    }, 2000);
-                }
-            });
-        });
+        function selectTier(name, price, element) {
+            // Remove active class from all
+            document.querySelectorAll('.tier-card').forEach(card => card.classList.remove('active'));
+            
+            // Add active class to selected
+            element.classList.add('active');
+            
+            selectedTierName = name;
+            selectedPrice = price;
+
+            // Unlock Step 2
+            const step2 = document.getElementById('step-2');
+            step2.classList.remove('opacity-30', 'pointer-events-none');
+            
+            // Update Summary
+            const summary = document.getElementById('summary-text');
+            summary.innerText = `Выбрано: ${name} (${price})`;
+            summary.classList.add('text-primary');
+
+            // Enable Button
+            const btn = document.getElementById('submit-btn');
+            btn.disabled = false;
+            btn.classList.remove('opacity-50', 'cursor-not-allowed');
+
+            // Show FAB
+            document.getElementById('whatsapp-fab').classList.remove('scale-0');
+        }
+
+        function sendToWhatsApp() {
+            const description = document.getElementById('description').value.trim();
+            const phone = "996559553805";
+            
+            if (!selectedTierName) {
+                alert("Пожалуйста, выберите тариф");
+                return;
+            }
+
+            const message = `Здравствуйте! Хочу заказать рекламу.\n\n` +
+                            `Тариф: ${selectedTierName}\n` +
+                            `Цена: ${selectedPrice}\n` +
+                            `Описание: ${description || "Не указано"}`;
+            
+            const encodedMessage = encodeURIComponent(message);
+            window.open(`https://wa.me/${phone}?text=${encodedMessage}`, '_blank');
+        }
     </script>
 </body></html>
